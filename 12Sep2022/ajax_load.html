@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque cumque dolore odio exercitationem suscipit pariatur a quod alias. Minus!
+</p>
+
+    <div class="abc1"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reprehenderit tenetur laudantium, mollitia facere praesentium molestias hic error animi maxime est accusamus velit officia voluptatibus nulla aliquam exercitationem nemo. Suscipit, asperiores reiciendis fugit recusandae sequi similique magni maxime eum rerum autem consequuntur, voluptate praesentium tempore et quo minus quidem nesciunt quam voluptates ducimus a necessitatibus. Accusamus error aliquid neque assumenda veniam, et vitae eum placeat ex 
+    </p>
+<button id="btn1"> click me</button>
+    <h1 id ="abc"></h1>
+    <script>
+// $(document).ready(function () {
+//     $(".abc1").load('data_text.txt')
+// });
+
+$(document).ready(function () {
+    $(".abc").load("data.php")
+});
+
+$(document).ready(function () {
+    $("#btn1").click(function(){
+        $(".abc1").load("data.php",);
+        alert(data)
+    })
+  
+});
+    </script>
+</body>
+</html>
