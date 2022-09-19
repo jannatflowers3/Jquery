@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>the title</title>
+<style>
+
+
+    </style>
+
+    </head>
+    <body>
+<ul class="country">
+  
+   
+</ul>
+<!-- ul ar modhe  hole prepend 
+age ul li ar modhe add hobe  append -->
+
+<form action="">
+        <tr class="fruits"><td><input type="text"  placeholder="enter your country"></td></tr>
+  
+    <button class="btn1"> after</button>
+    
+</form>
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+          $(document).ready(function(){
+            $(".btn1").click(function(){
+            $(".fruits").after("<tr> <td><input type ='text'></td></tr>");
+             
+            });
+        })
+
+    </script>
+    <script>
+        // $(document).ready(function(){
+        //     $(".btn1").click(function(){
+        //      $(".country").append("country:","<input type='text' placeholder='enter your country'><br>");
+             
+        //     })
+        // })
+    </script>
+    </body>
+    </html>

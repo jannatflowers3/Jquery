@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>the title</title>
+<style>
+
+
+    </style>
+
+    </head>
+    <body>
+<ul class="country">
+  
+    <li>Country :</li>
+
+</ul>
+<!-- ul ar modhe  hole prepend 
+age ul li ar modhe add hobe  append -->
+<button class="btn1"> before</button>
+<button class="btn2">  after</button>
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+$(document).ready(function(){
+    $(".btn1").click(function () {
+        $(".country").prepend("<li> all country</li>");
+
+
+      })
+
+      $(".btn2").click(function () {
+        $(".country").append("<li> all country</li>");
+      })
+
+})
+    </script>
+    </body>
+    </html>

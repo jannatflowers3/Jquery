@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>the title</title>
+<style>
+    .box1{ 
+        margin:10px;
+        padding:12px;
+    border:2px solid rgba(214, 17, 17, 0.797);
+    width:120px;
+    color: royalblue;
+    }
+    .box2{
+        height: 100px;
+        width: 100px;
+        margin: 20px 0;
+        /* border-radius: 50%; */
+        background-color: aqua;
+    }
+    
+    </style>
+
+    </head>
+    <body>
+<p>empty remove only content from box:</p>
+    <div class="box1">
+       <!-- <h2>This is header inside box1</h2> -->
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, et.
+    </div>
+    
+<button class="btn1">Add new div before</button>
+<button class="btn2"> add new div after</button>
+
+    <script src="jquery.min.js"></script>
+    <script>
+    //    $(document).ready(function(){
+    //      $(".btn1").click(function(){
+    //        $(".box1").before("<div class='box2'> content before box1 </div>")
+    //      })
+    //    });
+
+$(document).ready(function(){
+    $(".btn1").click(function(){
+        $(".box1").before("<div class='box2'> content add before box1</div>");
+        $(".box2").click(function(){
+            $(this).remove();
+        })
+       
+    })
+})
+
+       $(document).ready(function(){
+         $(".btn2").click(function(){
+           $(".box1").after("<div class='box2'> content before box1 </div>")
+         })
+       });
+    </script>
+    </body>
+    </html>

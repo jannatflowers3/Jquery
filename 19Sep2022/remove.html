@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>the title</title>
+<style>
+    .box1{ 
+        margin:10px;
+        padding:12px;
+    border:2px solid rgba(214, 17, 17, 0.797);
+    width:120px;
+    color: royalblue;
+    }
+    
+    </style>
+
+    </head>
+    <body>
+<p>ALL element box remove :</p>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consequatur molestias labore esse ducimus! Eos eaque pariatur libero obcaecati natus!
+
+        </p>
+    </div>
+    
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+         $(".box1").click(function(){
+            $(this).remove();
+         })
+       });
+    </script>
+    </body>
+    </html>
