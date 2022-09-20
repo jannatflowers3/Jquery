@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#choice").change(function(){
+               var opt_value = $(this).val();
+            //    alert(opt_value)
+            //         $("h3").html(opt_value);
+            $.get("list.php",{mydata:opt_value},function(data,status){
+                // alert(data);
+                $(".show").html(data);
+            })
+            })
+        })
+        // get method ar 3 ta value
+        // 1.file ar name 
+        // 2. ki data pathabo 
+        // 3. call back function
+    </script>
+</head>
+<body>
+    <h1>Fetching Data good bad</h1>
+    <h3 class="show"></h3>
+    <form action="">
+       <select id="choice">
+        <option selected>Selected</option>
+        <option value="Good">Good</option>
+        <option value="Bad">Bad</option>
+        <option value="Good">Good</option>
+    
+       </select>
+    </form>
+</body>
+</html>
