@@ -13,7 +13,8 @@ else if($_GET['mydata']=='Bad'){
 }
 
 
-function getdata($items){
+function 
+($items){
     $output = "<ul>";
     for($i = 0;$i<count($items);$i++){
         $output .="<li>".$items[$i]."</li>";
