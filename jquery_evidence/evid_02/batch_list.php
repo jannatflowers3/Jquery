@@ -17,7 +17,7 @@ $db = new mysqli("localhost","root","","wdpf_batch");
               var id =  $(this).val();
               $.get(
               'student_list.php',{batch_id:id},function(data){
-                $("#show").html(data);
+                $("#studentid").html(data);
                 // alert(data);
               }
 
@@ -47,11 +47,9 @@ $db = new mysqli("localhost","root","","wdpf_batch");
         }
         ?>
     </select>
+    <select id="studentid">
+      <option value="" disabled selected> selected one</option>
+    </select>
 </form>
-<!-- <div id="show"></div> -->
-    <table border='1' id="show">
-    
-      
-    </table>
 </body>
 </html>
