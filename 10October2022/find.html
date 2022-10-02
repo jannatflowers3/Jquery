@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.selected{
+			border:2px solid gray;
+			
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<div >
+	
+			<ul>
+				<li> country 1</li>
+				<li>  country 2 </li>
+				<span> country 3</span>
+			</ul>
+		
+	</div>
+	<div id="masterlist">
+		
+			<ul>
+				<li>apple</li>
+				<li> orange</li>
+				<span> pinapple</span>
+			</ul>
+	
+	</div>
+
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#masterlist').find('li')
+				
+			.width(500).addClass('selected');
+
+		})
+	</script>
+</body>
+</html>

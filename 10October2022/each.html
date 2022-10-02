@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h1> see all fruits</h1>
+	<div class="show"></div>
+	
+	<button type="button" id="button">click me</button>
+
+	<div id="output"></div>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+				$('#button').click(function(){
+					var fruits = ["apple","orange","juckfruits"];
+				var all = "";
+				$.each(fruits,function(index,value){
+					
+				all+= '<li>'+value+'</li>';
+
+				})
+				$('#output').html(all);
+				})
+
+			})
+		
+	</script>
+</body>
+</html>
